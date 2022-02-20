@@ -3,7 +3,7 @@
 
     int main() {
     int n;
-    int end =1;
+    int end = 1;
     int count = 0;
     int *arr = (int*)malloc(sizeof(int));
     for (int i = 0; end; i++) {
@@ -15,8 +15,11 @@
     arr[i] = n;
     count ++;
     }
-    for (int i = 0; i < count - 1; i++) {
+    for (int i = 0; i < count - 2; i++) {
         printf("%d ", arr[i]);
     }
+    int i = count - 2;
+    printf("%d\n", arr[i]);
+    free(arr);
     return 0;
 }
